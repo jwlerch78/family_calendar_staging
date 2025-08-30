@@ -37,7 +37,7 @@ body {
 
 /* Agenda & Photos take the remaining space */
 #agenda-wrapper {
-  flex: 0 0 60%; /* 60% of remaining height */
+  flex: 0 0 53%; /* 60% of remaining height */
 }
 
 #photo-wrapper {
