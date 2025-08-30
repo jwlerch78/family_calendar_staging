@@ -23,41 +23,35 @@ body {
 
 /* LEFT COLUMN */
 .left-col {
-  grid-area: left;
-  display: grid;
-  grid-template-rows: 7% 1fr;
-  row-gap: 8px;
-  background: var(--bg-left);
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-#leftpanel-wrapper {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
-  border-bottom: 5px solid transparent;
-  overflow: hidden;
+  gap: 8px; /* optional spacing between widgets */
 }
 
-.iframe-wrapper {
+/* Clock stays at natural height (or fixed if you want) */
+#iframe-wrapper#dateTime-wrapper {
+  flex: 0 0 7%; /* roughly 7% of column height */
+}
+
+/* Agenda & Photos take the remaining space */
+#agenda-wrapper {
+  flex: 0 0 60%; /* 60% of remaining height */
+}
+
+#photo-wrapper {
+  flex: 0 0 40%; /* 40% of remaining height */
+}
+
+/* Make the iframes fill their wrapper completely */
+.iframe-wrapper iframe {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  position: relative;
-  background: var(--bg-left);
+  border: 0;
+  display: block;
 }
 
-.iframe-wrapper iframe,
-.leftpanel {
-  width: 125%;
-  height: 125%;
-  border: 0;
-  transform: scale(0.8);
-  transform-origin: top left;
-  overflow: hidden;
-  display: block;
-  background: #000;
-}
 
 /* Divider */
 .divider {
