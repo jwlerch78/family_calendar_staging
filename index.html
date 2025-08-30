@@ -9,19 +9,23 @@
 
 <body>
   <!-- LEFT COLUMN -->
-  <section class="left-col">
-    <div class="iframe-wrapper">
-      <iframe id="dateTime" src="Date_Time.html" title="Date & Time"></iframe>
-    </div>
-    <div id="leftpanel-wrapper">
-      <iframe class="card leftpanel" id="leftpanel" src="LeftPanel.html" title="LeftPanel"></iframe>
-    </div>
-    <!-- Photos widget -->
-  <div class="iframe-wrapper">
-    <iframe id="photos" src="PhotosWidget.html" title="Photo Slideshow"></iframe>
+<section class="left-col">
+  <!-- Clock Widget -->
+  <div class="iframe-wrapper" id="dateTime-wrapper">
+    <iframe id="dateTime" src="Date_Time.html" title="Date & Time"></iframe>
   </div>
-  </section>
 
+  <!-- Agenda Widget -->
+  <div class="iframe-wrapper" id="agenda-wrapper">
+    <iframe id="agenda-frame" src="LeftPanel.html" title="Agenda"></iframe>
+  </div>
+
+  <!-- Photos Widget -->
+  <div class="iframe-wrapper" id="photo-wrapper">
+    <iframe id="photo-frame" src="PhotosWidget.html" title="Photos"></iframe>
+  </div>
+</section>
+  
   <div class="divider" aria-hidden="true"></div>
 
   <!-- RIGHT PANEL -->
